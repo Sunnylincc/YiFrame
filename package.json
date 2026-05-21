@@ -1,0 +1,30 @@
+{
+  "name": "yiframe",
+  "version": "0.1.0",
+  "description": "YiFrame / 影页 - 写网页，出视频。",
+  "type": "module",
+  "bin": {
+    "yiframe": "dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "yiframe dev",
+    "studio": "yiframe studio",
+    "render": "yiframe render",
+    "render:example": "yiframe render examples/product-promo",
+    "doctor": "yiframe doctor",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "postinstall": "echo 'Tip: run npx playwright install chromium'"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "express": "^4.21.2",
+    "playwright": "^1.53.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.23",
+    "@types/node": "^22.15.31",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19"
+  }
+}
